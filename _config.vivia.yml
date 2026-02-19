@@ -75,7 +75,7 @@ comment:
   giscus:
     enable: true # 是否启用 giscus
     repo: zfrg/zfrg-blog # 存放评论的 discus 所在的 repo
-    repoID: R_kgDOJ_cU7w # GitHub repo ID
+    repoID: R_kgDORNnChg # GitHub repo ID
     category: General # 选择新 discussions 所在的分类
     categoryID: DIC_kwDOJ_cU784CYgqK # 分类 ID
     mapping: title # pathname, url, title, og:title, specific, number
