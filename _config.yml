@@ -32,18 +32,21 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+syntax_highlighter: highlight.js
 highlight:
-  enable: true
+  auto_detect: false
   line_number: true
-  auto_detect: true
-  tab_replace: ''
+  line_threshold: 0
+  tab_replace: ""
+  exclude_languages:
+    - example
   wrap: true
-  hljs: true
+  hljs: false
 prismjs:
-  enable: false
-  preprocess: false
-  line_number: false
-  tab_replace: ''
+  preprocess: true
+  line_number: true
+  line_threshold: 0
+  tab_replace: ""
 index_generator:
   path: ''
   per_page: 8
