@@ -95,7 +95,7 @@
       </div>
       <div id="tcomment"></div>
     </div>
-    <script>
+    <script data-swup-reload-script>
         twikoo.init({
             envId: '<%- theme.comment.twikoo.envID %>',
             el: '#tcomment',
@@ -114,7 +114,7 @@
       </div>
       <div id="waline"></div>
     </div>
-    <script type="module">
+    <script type="module" data-swup-reload-script>
       import { init } from 'https://cdn.staticfile.net/waline/3.0.0-alpha.9/waline.js';
 
       init({
@@ -172,4 +172,5 @@
       ></script>
     <% } %>
   <% } %>
+
 <% } %>
