@@ -66,14 +66,15 @@ comment:
     # 可在此添加其他 Valine 支持的配置项
     # 详见 https://valine.js.org/configuration.html
   twikoo:
-    enable: false           # 是否启用 Twikoo 评论系统
-    envID:
+    enable: true           # 是否启用 Twikoo 评论系统
+    envID: https://twikoo.zfrg-blog.de5.net
     region:
-    path: location.pathname
-    lang:
+    # path: location.pathname
+    path: document.title
+    lang: zh-CN
     # 详见 https://github.com/imaegoo/twikoo
   giscus:
-    enable: true # 是否启用 giscus
+    enable: false # 是否启用 giscus
     repo: zfrg/zfrg-blog # 存放评论的 discus 所在的 repo
     repoID: R_kgDORNnChg # GitHub repo ID
     category: General # 选择新 discussions 所在的分类
