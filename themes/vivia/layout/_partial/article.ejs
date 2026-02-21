@@ -72,7 +72,7 @@
     let valineConfig = theme.comment.valine;
     valineConfig.el = '#vcomments';
   %>
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js' data-swup-reload-script></script>
   <div id="comment-card" class="comment-card">
     <div class="main-title-bar">
       <div class="main-title-dot"></div>
@@ -80,14 +80,14 @@
     </div>
     <div id="vcomments"></div>
   </div>
-  <script>
+  <script data-swup-reload-script>
       new Valine(<%- JSON.stringify(valineConfig) %>);
   </script>
 <% } %>
 
 <% if (page.comments){ %>
   <% if (!index && theme.comment.twikoo && theme.comment.twikoo.enable) { %>
-    <script src="https://cdn.staticfile.org/twikoo/1.6.26/twikoo.all.min.js"></script>
+    <script src="https://cdn.staticfile.org/twikoo/1.6.26/twikoo.all.min.js" data-swup-reload-script></script>
     <div id="comment-card" class="comment-card">
       <div class="main-title-bar">
         <div class="main-title-dot"></div>
@@ -174,3 +174,4 @@
   <% } %>
 
 <% } %>
+
