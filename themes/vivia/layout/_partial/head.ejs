@@ -51,5 +51,8 @@
       href="https://cdn.staticfile.net/waline/3.0.0-alpha.9/waline.css"
     />
   <% } %>
+  <% if (theme.comment.twikoo && theme.comment.twikoo.enable) { %>
+    <script src="https://cdn.staticfile.org/twikoo/1.6.26/twikoo.all.min.js"></script>
+  <% } %>
   <%- css('css/style') %>
 </head>
