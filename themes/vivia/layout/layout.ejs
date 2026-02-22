@@ -18,8 +18,8 @@
 <link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet" media="only x" onload="this.onload=null;this.media='all'">
 <link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet" media="only x" onload="this.onload=null;this.media='all'">
 <link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet" media="only x" onload="this.onload=null;this.media='all'">
-<script src="<%- url_for("/js/color.global.min.js") %>" ></script>
-<script src="<%- url_for("/js/load-settings.js") %>" ></script>
+<script src="<%- url_for("/js/color.global.min.js") %>" async></script>
+<script src="<%- url_for("/js/load-settings.js") %>" async></script>
 <%- partial('_partial/head') %>
 <body>
   <% if (theme.previewMode) { %>
@@ -44,14 +44,15 @@
     <%- partial('_partial/back-to-top') %>
   </div>
   <script src="<%- url_for("/js/light-dark-switch.js") %>"></script>
-  <script src="https://unpkg.com/swup@4" async></script>
-  <script src="https://unpkg.com/@swup/fade-theme@2" async></script>
-  <script src="https://unpkg.com/@swup/scroll-plugin@4" async></script>
-  <script src="https://unpkg.com/@swup/preload-plugin@3" async></script>
-  <script src="https://unpkg.com/@swup/scripts-plugin@2" async></script>
-  <script src="https://unpkg.com/@swup/head-plugin@2" async></script>
+  <script src="https://unpkg.com/swup@4" defer></script>
+  <script src="https://unpkg.com/@swup/fade-theme@2" defer></script>
+  <script src="https://unpkg.com/@swup/scroll-plugin@4" defer></script>
+  <script src="https://unpkg.com/@swup/preload-plugin@3" defer></script>
+  <script src="https://unpkg.com/@swup/scripts-plugin@2" defer></script>
+  <script src="https://unpkg.com/@swup/head-plugin@2" defer></script>
   <script src="<%- url_for("/js/swup-init.js") %>" defer></script>
 </body>
 </html>
+
 
 
