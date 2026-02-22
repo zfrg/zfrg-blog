@@ -22,7 +22,7 @@ hue: 250                         # 主题色调 (例如：红: 0，橙: 60，蓝
                                  # 可访问 `saicaca.github.io/vivia-preview` 预览颜色设置
 
 # 个人信息
-avatar: /images/avatar.webp       # 头像图片文件路径，相对于 /source 目录
+avatar: /images/avatar.svg       # 头像图片文件路径，相对于 /source 目录
 author: 竹枫若官zfrg
 subtitle: Hello World!
 links:
@@ -69,8 +69,7 @@ comment:
     enable: true           # 是否启用 Twikoo 评论系统
     envID: https://twikoo.zfrg-blog.de5.net
     region:
-    # path: location.pathname
-    path: document.title
+    path: location.pathname
     lang: zh-CN
     # 详见 https://github.com/imaegoo/twikoo
   giscus:
