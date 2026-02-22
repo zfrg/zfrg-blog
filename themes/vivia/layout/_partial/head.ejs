@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <base href="<%= config.root %>">
 
-  <link rel="preload" href="<%- url_for("/css/fonts/Roboto-Regular.ttf") %>" as="font" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" href="<%- url_for("/css/fonts/Roboto-Bold.ttf") %>" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="<%- url_for("/css/fonts/Roboto-Regular.ttf") %>" as="font" type="font/ttf" crossorigin="anonymous" media="only x" onload="this.onload=null;this.media='all'">
+  <link rel="preload" href="<%- url_for("/css/fonts/Roboto-Bold.ttf") %>" as="font" type="font/ttf" crossorigin="anonymous" media="only x" onload="this.onload=null;this.media='all'">
 
   <%- open_graph({twitter_id: theme.twitter, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
   <% if (config.feed) { %>
@@ -52,7 +52,8 @@
     />
   <% } %>
   <% if (theme.comment.twikoo && theme.comment.twikoo.enable) { %>
-    <script src="https://cdn.staticfile.org/twikoo/1.6.26/twikoo.all.min.js"></script>
+    <script src="https://cdn.staticfile.org/twikoo/1.6.26/twikoo.all.min.js" async></script>
   <% } %>
   <%- css('css/style') %>
 </head>
+
