@@ -14,6 +14,7 @@ const METING_TAG_OPTION = {
 	listmaxheight: '340px',
 	preload: 'auto',
 	theme: '#ad7a86',
+	api: '',
 };
 
 function parse(options) {
