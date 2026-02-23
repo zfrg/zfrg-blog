@@ -64,6 +64,9 @@ function parse(options) {
 			case option.startsWith('theme:'):
 				settings.theme = extractOptionValue(option);
 				break;
+			case option.startsWith('api:'):
+				settings.api = extractOptionValue(option);
+				break;
 			default:
 				throwError(`Unrecognized tag argument(${index + 1}): ${value}`);
 		}
@@ -72,7 +75,7 @@ function parse(options) {
 }
 
 hexo.extend.tag.register('meting', function (args) {
-	const { id, server, type, mode, autoplay, mutex, listmaxheight, preload, theme } = parse(args);
+	const { id, server, type, mode, autoplay, mutex, listmaxheight, preload, theme, api } = parse(args);
 
 	return `<meting-js
   server="${server}"
@@ -83,6 +86,7 @@ hexo.extend.tag.register('meting', function (args) {
   mutex="${mutex}"
   listmaxheight="${listmaxheight}"
   preload="${preload}"
-  theme="${theme}">
+  theme="${theme}"
+  api="${api}">
 </meting-js>`;
 });
