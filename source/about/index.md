@@ -56,6 +56,6 @@ date: 2026-01-25 09:05:11
 
 ## 一起听音乐 🎶！
 
-{% meting "4930339442" "netease" "playlist" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#63b3ff"%}
+{% meting "4930339442" "netease" "playlist" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#63b3ff" "api:https://api.qijieya.cn/meting?server=:server&type=:type&id=:id&r=:r"%}
 
 [\_zfrg\_喜欢的音乐 - 歌单 - 网易云音乐](https://music.163.com/#/playlist?id=4930339442)
