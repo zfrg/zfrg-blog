@@ -21,7 +21,7 @@
       <span class="dark-mode-icon"><%- partial('_icon/dark_mode') %></span>
     </a>
     <% if (theme.rss){ %>
-      <a id="nav-rss-link" class="nav-icon mobile-hide" href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>">
+      <a id="nav-rss-link" class="nav-icon mobile-hide" href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>" data-no-swup>
         <%- partial('_icon/rss_feed') %>
       </a>
     <% } %>
@@ -36,7 +36,7 @@
       <a class="nav-dropdown-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
     <% } %>
     <% if (theme.rss) { %>
-      <a class="nav-dropdown-link" href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>">RSS</a>
+      <a class="nav-dropdown-link" href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>" data-no-swup>RSS</a>
     <% } %> 
     </div>
 </div>
@@ -46,4 +46,5 @@
   dropdownBtn.onclick = function() {
     dropdownEle.classList.toggle("hidden");
   }
+
 </script>
