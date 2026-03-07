@@ -2,7 +2,7 @@
   <div class="info-card">
     <div class="avatar">
       <% if (theme.avatar) { %>
-        <image src=<%- url_for(theme.avatar) %> loading="lazy" decoding="async"></image>
+        <image src=<%- url_for(theme.avatar) %> loading="eager" decoding="async" fetchpriority="high"></image>
       <% } %>
       <div class="img-dim"></div>
     </div>
@@ -18,4 +18,5 @@
     </div>
   </div>
 </div>
+
 
