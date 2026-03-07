@@ -5,7 +5,7 @@ keywords: null
 author: zfrg
 language: zh-CN
 timezone: ''
-url: https://zfrg-blog.de5.net/
+url: https://blog.imzfrg.top/
 root: /
 permalink: 'posts/:year:month:day:hash/'
 permalink_defaults: null
