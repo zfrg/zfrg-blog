@@ -67,7 +67,7 @@ comment:
     # 详见 https://valine.js.org/configuration.html
   twikoo:
     enable: true           # 是否启用 Twikoo 评论系统
-    envID: https://twikoo.zfrg-blog.de5.net
+    envID: https://twikoo.imzfrg.top
     region:
     path: location.pathname
     lang: zh-CN
